@@ -1,5 +1,3 @@
-Here's a sample README file for your project:
-
 ---
 
 # Gemini Pro Cricket ODI Dataset Project
