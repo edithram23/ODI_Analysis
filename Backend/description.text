@@ -1,0 +1,49 @@
+
+    innings: Inning number (1st, 2nd, etc.).
+    team: Team name.
+    batsman: Name of the batsman.
+    runs: Number of runs scored.
+    balls: Number of balls faced.
+    fours: Number of boundaries (4 runs) scored.
+    sixes: Number of sixes (6 runs) scored.
+    strikeRate: Batsman's strike rate (runs scored per 100 balls faced).
+    isOut: Indicates if the batsman is out (1 for out, 0 for not out).
+    wicketType: Type of dismissal.
+    fielders: Names of fielders involved in the dismissal.
+    bowler: Name of the bowler who took the wicket.
+    player_id: Unique identifier for the player.
+    player_object_id: Object identifier for the player.
+    player_name: Name of the player.
+    Date_of_birth: Player's date of birth.
+    Date_of_Death: Player's date of death.
+    gender: Player's gender.
+    batting_style: Player's batting style.
+    bowling_style: Player's bowling style.
+    SeriesName: Name of the cricket series.
+    Matchdate: Date of the match.
+    MatchFormat: Format of the match (e.g., Test, ODI, T20).
+    Team1 Name: Name of the first team.
+    Team1 Runs Scored: Runs scored by Team 1.
+    Team1 Wickets Fell: Number of wickets lost by Team 1.
+    Team1 Extras Rec: Extra runs scored by Team 1.
+    Team2 Name: Name of the second team.
+    Team2 Runs Scored: Runs scored by Team 2.
+    Team2 Wickets Fell: Number of wickets lost by Team 2.
+    Team2 Extras Rec: Extra runs scored by Team 2.
+    MatchVenueStadium: Name of the stadium where the match was held.
+    MatchVenueCity: City where the match was held.
+    MatchVenueCountry: Country where the match was held.
+    Umpire1: Name of the first umpire.
+    Umpire2: Name of the second umpire.
+    MatchReferee: Name of the match referee.
+    TossWinner: Team that won the toss.
+    TossWinnerChoice: Choice made by the toss-winning team (bat or bowl).
+    MatchWinner: Winning team of the match.
+    MatchResultText: Textual description of the match result.
+    Man_of_the_match: Name of the player awarded as the Man of the Match.
+    Team1 Playing 11: Names of players in the playing 11 of Team 1.
+    Team2 Playing 11: Names of players in the playing 11 of Team 2.
+    Debut Players: Names of players making their debut in the match.
+    isCaptain: Indicates if the player is a captain (1 for captain, 0 for not captain).
+    player_on_winning_side: Indicates if the player was on the winning side (1 for on winning side, 0 for on losing side,-1 for No Result).
+    

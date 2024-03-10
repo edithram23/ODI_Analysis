@@ -1,0 +1,96 @@
+
+body{
+    background-color: #202222;
+
+}
+.MainContainer{
+    display: flex;
+    flex-direction:row;
+}
+
+
+
+.Leftcontainer{
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      height: 100%;
+      width: 15%;
+}  
+.innerleft{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    row-gap: 50px;
+    margin-top: 40px;
+    height: 100%;
+}
+
+.Logo{
+    
+    filter:invert(70%);
+    width: 115px;
+    
+
+}
+.list_link{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    margin-left: 9%;
+}
+.logo_name{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    row-gap: 10px;
+    align-items: center;
+    color: white;
+}
+.link_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 31px;
+    font-size: 15px;
+    padding: 0 20px 0 20px;
+  }
+
+.Comparison{
+    filter:invert(70%);
+    width: 30px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.condition{
+    margin-top: 100%;
+filter: invert(70%);
+font-size: 9px;
+font-style: italic;
+
+}
+
+.Rightcontainer{
+      display: block;
+      flex-direction: column;
+      position: fixed;
+      height:98%;
+      width: 85%;
+      background-color: #191A1A;
+      margin-top: 0.6%;
+      margin-bottom: 1%;
+      margin-right: 0.6%;
+      margin-left: 15%;
+      border-radius: 1.8%;
+}

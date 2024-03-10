@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+h1{
+    font-family:  "Sixtyfour", sans-serif;
+    font-size: 35px;
+    font-weight: 1px;
+}  
+input { 
+    border-style: none;
+    background: transparent;
+    outline: none; }
+button { 
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none; }
+.Container{
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 55%;
+    width: 70%;
+}
+
+.InnerContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: center;
+    padding-top: 3%;
+    color: white;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.search-container {
+    max-width: 700px;
+    margin: 50px auto;
+}
+input[type="text"] {
+    display: flex;
+    width: 625px; 
+    height: 20px;
+    font-size: 18px;
+    justify-content:center ;
+    font-weight: 600px;
+    color: white;
+    padding: 10px 50px 10px 10px; /* Added padding to the right side */
+    border: 2px solid #2A2C2C;
+    border-radius: 15px;
+    background-color: #202222;
+    
+    
+}
+
+input[type="text"]::placeholder
+{
+    color: white;
+    filter: invert(40%);
+}
+
+input[type="text"]::content{
+    color: white;
+}
+
+.search-container form {
+    position: relative;
+}
+.search-container form button {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width:50px;
+    background: transparent;
+    border: transparent;
+    font-size: 20px;
+    color: #787878;
+    cursor: pointer;
+    outline: 0;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+.output{
+    display: flex;
+    flex-direction: column;
+    width: 725px; 
+    height: max-content;
+    font-size: 18px;
+    font-weight: 600px;
+    color: white;
+    padding: 10px 50px 10px 10px; /* Added padding to the right side */
+    border: 2px solid #2A2C2C;
+    border-radius: 15px;
+    row-gap: 15px;
+    background-color: #202222;
+}
