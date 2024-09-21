@@ -23,7 +23,7 @@ button {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    height: 55%;
+    height: 30%;
     width: 70%;
 }
 
@@ -106,3 +106,5 @@ input[type="text"]::content{
     row-gap: 15px;
     background-color: #202222;
 }
+
+

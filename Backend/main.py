@@ -12,6 +12,11 @@ import requests
 import pickle
 from dotenv import load_dotenv
 import os
+from pymongo import MongoClient
+import base64
+from io import BytesIO
+from PIL import Image
+
 load_dotenv('API.env')
 
 
@@ -45,20 +50,21 @@ class GENAI():
         config = {'temperature':0.4, 'top_p':1, 'top_k':32}
         self.model = gen.GenerativeModel('gemini-pro', generation_config=config)
         
-    def extract_name(self, user):
+    def extract_name(self, user,sim=0.6):
         y = self.tf.transform([user])
         similarities = cosine_similarity(self.tf.transform(self.players_data), y)
         names_6 = []
         names_45 = []
+        print(len(self.players_data))
         for i,s in enumerate(similarities):
-            if(s>0.6):
+            if(s>sim):
                 if(i not in names_6):
                     names_6+=[self.players_data[i]]
             elif(s>0.40):                         # checking with 0.40 prob score
                 if(i not in names_45):
                     names_45+=[self.players_data[i]]
         return names_45 if len(names_6)==0 else names_6
-
+    
     def preprocess(self, text='How many runs did virat ,ishant, rohit scored in 2019'):
         text = text.strip().lower()
         text = re.sub(r"[^a-zA-Z0-9.\s]+", '', text)
@@ -104,7 +110,7 @@ class GENAI():
         return output
 
     def output(self, question):
-        question = self.rephrase(question.lower())
+        question = self.rephrase(question.lower()+'?')
         out = []
         for i in question:
             out+=[self.genai(self.prompt, i).text]
@@ -118,7 +124,84 @@ class GENAI():
             answer_text+=[self.genai(self.prompt_out, question[i]+'~'.join(map(str, self.query_sql(sql_commands[i], 'ODI.db')[0]))).text]
         return answer_text
 
+    
+    
+    
+    def ind_output(self,name):
+        questions = [f'How many matches has {name} played?',f'How many runs has {name} scored?',f'What is run average of {name}?',f'How many fifties has {name} scored?',
+                     f'How many centuries have {name} scored?',f'How many fours have {name} hit?',f"How many sixes have {name} scored"]
+        out = []
+        for i in questions:
+            out+=[self.genai(self.prompt, i).text]
+            # print(out)
+        with open("test.sql", "w") as f:
+            for i in out:
+                f.write(re.sub('```', '', re.sub('```sql', '', i)))
+        with open('test.sql', 'r') as sql_file:
+            sql_commands = sql_file.read().split(';')
+        answer_text = []
+        for i in range(len(questions)):
+            answer_text+=[''.join(map(str,self.query_sql(sql_commands[i], 'ODI.db')[0]))]
+            num = float(answer_text[i])
+        
+            # If the number is effectively an integer (e.g., 36.00), convert it to int
+            if num.is_integer():
+                answer_text[i] = str(int(num))
+            else:
+                # Otherwise, format to 2 decimal places
+                answer_text[i] = "{:.2f}".format(num)
+        return answer_text
+
+class Comparison():
+    def __init__(self):
+        self.uri = "mongodb+srv://admin:root@odi.jhidcy8.mongodb.net/?retryWrites=true&w=majority&appName=ODI"
+        self.client = MongoClient(self.uri)
+        self.db = self.client['ODI']
+        self.collection = self.db.player_image
+    def trim_transparency(self,img):
+        if img.mode == 'RGBA':
+            # Get bounding box of non-transparent pixels
+            bbox = img.getbbox()
+            if bbox:
+                img = img.crop(bbox)
+        return img
+
+    def image_retrieve(self,name,file='image'):
+        documents = list(self.collection.find({ 'Player_name': name }))[0]
+        decoded_data = base64.b64decode(documents['Orginal'])
+        image_buffer = BytesIO(decoded_data)
+        image = Image.open(image_buffer)
+        image.save(file+'.jpg')
+        decoded_data = base64.b64decode(documents['Removed'])
+        image_buffer = BytesIO(decoded_data)
+        image = Image.open(image_buffer)
+        trimmed_image = self.trim_transparency(image)
+        print("123")
+        trimmed_image.save('../frontend/odifront/src/assets/images/'+file+'.png')
+    def output(self,name1,name2):
+        try:
+            self.image_retrieve(name1,file='image1')
+        except:
+            print('Key error',name1)
+        try:
+            self.image_retrieve(name2,file='image2')
+        except:
+            print('Key error',name2)
+        
+# Com = Comparison()
+# Com.image_retrieve('Virat Kohli')
 
 # print(os.getenv('API_KEY'))
 # GENai = GENAI()
 # print(GENai.output('How many times did Finch got out by Bhuvaneshwar?'))
+
+
+"""
+        - Output
+            - Rephrase = rephrases for different player names
+                - Preprocess = stopword removal etc.
+                - Extract_Name = extracts the name of the player from the input string: returns a list of names tfidf
+                - for each extracted name - query gets rephrased
+            - genai = generates the content(code)
+                - for each rephrased query - code for it gets generated
+"""

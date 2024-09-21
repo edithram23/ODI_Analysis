@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+.Output_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content:flex-start;
+    }
+
+.upper_box{
+    height: 10%;
+   width:100%;
+}
+.Output {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:flex-start;
+    
+    }
+
+/* Styling for each individual image div */
+.Output1{
+    display: flex;
+    justify-content: center; /* Center images horizontally within the div */
+    align-items: flex-start; /* Align items to start at the top */
+    background-color: transparent;
+    box-sizing: border-box;
+    margin-top: 0; /* Ensure it starts at the top */
+    float: left;
+    width: 33%;
+    height: 80%;
+
+}
+.Output2 {
+    display: flex;
+    justify-content: center; /* Center images horizontally within the div */
+    align-items: flex-start; /* Align items to start at the top */
+    background-color: transparent;
+    box-sizing: border-box;
+    margin-top: 0; /* Ensure it starts at the top */
+    float: right;
+    width: 33%;
+    height: 80%;
+}
+.Middle_info{
+    float: center;
+    width: 33%;
+    height: max-content;
+    background-color: #2A2C2C;
+    z-index: 2;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    justify-content: center; /* Center images horizontally within the div */
+    align-items: flex-start; /* Align items to start at the top */
+    
+   
+}
+h2 {
+    margin-bottom: 20px;
+}
+
+
+.center-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.stats-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #202222;
+    align-items: center;
+}
+
+.player_name_left, .player_name_right, .player_stat_box {
+    flex: 1;
+    text-align: center; /* Center all the text */
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.player_name_left {
+    text-align: left; /* Align player name left */
+    font-family: "Jaro", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+    font-size: 33px;
+    font-style: italic;
+
+
+}
+
+.player_name_right {
+    text-align: right; /* Align right side content */
+    font-family: "Jaro", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 10px;
+  font-size: 33px;
+  font-style: italic;
+}
+
+.player_stat_box {
+    text-align: center; /* Stat label stays centered */
+    
+    font-family: "Pixelify Sans", sans-serif;
+      font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 26px;
+}
+
+
+/* Ensure images fill the div */
+.Compare_img1, .Compare_img2 {
+    max-width: 100px; /* Keep images responsive */
+    
+    float: top;
+        -webkit-filter: grayscale(99%); /* For Safari 6.0 - 9.0 */
+        filter: grayscale(99%); 
+            height: 300px; /* Set the desired height for cropping */
+            max-width: 400px; /* Set the desired max-width for the container */
+            min-width: 350px;
+            overflow: hidden; /* Hide any overflow from the image */
+            position: relative;
+            height: auto; /* Maintain the aspect ratio of the image */
+            object-fit: cover; /* Ensures the image covers the container and crops the excess */
+            display: block;
+            z-index: 1;    
+}
+/* The image itself */
+
+
+.Player_info1,.Player_info2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    /* position: relative; */
+}
+
+.Player_info1{
+    display: flex;
+    float: left;
+}
+
+
+
+.bubble {
+    width: 8vmin;
+    height: 8vmin;
+    background: hsl(212, 100%, 71%);
+    border: calc(10vmin * 0.09) solid hsl(212, 100%, 81%);
+    position: relative;
+    top: calc(8% + 5vmin + 20px); /* Adjusted to position below with a gap */
+    transform: translate(-50%, -50%);
+    /* Centered horizontally */
+    overflow: visible;
+    border-radius: 48% 40% 62% 47% / 61% 49% 64% 43%;
+    animation: rotate 35s infinite linear;
+    z-index: 1;
+  }
+  
+  .bubble::before {
+    content: '';
+    position: absolute;
+    top: calc(10vmin * 0.1);
+    left: calc(10vmin * 0.1);
+    width: calc(100% - (10vmin * 0.3));
+    height: calc(100% - (10vmin * 0.3));
+    background: hsl(212, 100%, 51%);
+    border: calc(10vmin * 0.065) solid hsl(212, 100%, 61%);
+    border-radius: 41% 40% 50% 55% / 49% 52% 51% 43%;
+    z-index: -2;
+    animation: rotateBefore 1s infinite linear;
+  }
+  
+  .bubble::after {
+    content: '';
+    position: absolute;
+    top: calc(10vmin * 0.2);
+    left: calc(10vmin * 0.2);
+    width: calc(100% - (10vmin * 0.5));
+    height: calc(100% - (10vmin * 0.5));
+    background: hsl(212, 100%, 31%);
+    border: calc(10vmin * 0.05) solid hsl(212, 100%, 41%);
+    border-radius: 42% 63% 51% 60% / 47% 62% 42% 52%;
+    animation: rotateAfter 2s infinite linear;
+  }
+  
+  @keyframes rotate {
+    0% { transform: rotate(1turn); }
+  }
+  
+  @keyframes rotateBefore {
+    0% { transform: rotate(-1turn); }
+  }
+  
+  @keyframes rotateAfter {
+    0% { transform: rotate(2turn); }
+  }
+  

@@ -1,0 +1,8 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;           /* Remove default margins */
+    padding: 0;          /* Remove default padding */
+    overflow: hidden;    /* Optional: Prevent scrollbars */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}

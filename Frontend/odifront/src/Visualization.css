@@ -1,3 +1,156 @@
-.vis{
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+
+h1{
+    font-family:  "Sixtyfour", sans-serif;
+    
+    font-size: 35px;
+    font-weight: 1px;
+}  
+input { 
+    border-style: none;
+    background: transparent;
+    outline: none; }
+button { 
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none; }
+
+
+    .InnerContainer{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-self: center;
+        padding-top: 3%;
+        color: white;
+    }
+    
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.search-container {
+
+    max-width: 700px;
+    margin: 50px auto;
+}
+input[type="text"] {
+    display: flex;
+    height: 20px;
+    font-size: 18px;
+    justify-content:center ;
+    font-weight: 600px;
     color: white;
+    padding: 10px 50px 10px 10px; /* Added padding to the right side */
+    border: 2px solid #2A2C2C;
+    border-radius: 15px;
+    background-color: #202222;
+    
+    
+}
+
+input[type="text"]::placeholder
+{
+    color: white;
+    filter: invert(40%);
+}
+
+input[type="text"]::content{
+    color: white;
+}
+
+.search-container form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.search-container form button {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width:50px;
+    background: transparent;
+    border: transparent;
+    font-size: 20px;
+    color: #787878;
+    cursor: pointer;
+    outline: 0;
+    justify-content: center;
+    padding-top: 10px;
+
+}/* Ensure the output container starts below the search box */
+/* Container holding both image divs */
+
+
+/* Optional: Adjust the styling of the parent container to provide more control */
+.Container{
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* height: 100vh; */
+    max-height: 100%;
+    width: 70%;
+}
+.Container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+
+.Inner_Container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    justify-content: center; /* Horizontally centers the child */
+    align-items: center;
+margin-left: 30px;
+margin-top: 5%;
+}
+
+.Name{
+    margin-top: -80px;
+    height: 80px;
+    font-family: "Saira Stencil One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    display:flex;
+    justify-items: center;
+    justify-content: center;
+margin-bottom:10px;
+}
+.loading-circle {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #2A2C2C; /* Light border */
+    border-top: 5px solid white; /* Darker border for the spinning effect */
+    border-radius: 50%;
+    animation: spin 1s linear infinite; /* Infinite spin animation */
+}
+
+/* Keyframes for the spinning animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

@@ -1,48 +1,38 @@
 
 SELECT
-  SUM(ODI.runs)
+  COUNT(*) AS MatchesPlayed
 FROM ODI
 WHERE
-  ODI.batsman = 'Kumar Dharmasena' AND ODI.opponent_team = 'Australia';
+  batsman = "Kapil Dev";
+
+SELECT SUM(runs)
+FROM ODI
+WHERE batsman = 'Kapil Dev';
+
+SELECT AVG(runs) AS "Run Average"
+FROM ODI
+WHERE batsman = 'Kapil Dev';
 
 SELECT
-  SUM(runs)
+  COUNT(*) AS fifties
 FROM ODI
 WHERE
-  batsman = 'Kumar Sangakkara' AND opponent_team = 'Australia';
+  batsman = 'Kapil Dev' AND runs >= 50 AND runs < 100;
 
 SELECT
-  SUM(runs) AS total_runs
+  COUNT(*) AS Number_of_Centuries
 FROM ODI
 WHERE
-  batsman = 'Praveen Kumar' AND opponent_team = 'Australia';
+  batsman = 'Kapil Dev' AND runs >= 100;
 
 SELECT
-  SUM(runs) AS total_runs
+  SUM(fours) AS total_fours
 FROM ODI
 WHERE
-  batsman = "Vinay Kumar" AND opponent_team = "Australia";
+  batsman = 'Kapil Dev';
 
 SELECT
-  SUM(runs) AS total_runs_scored
+  SUM(sixes)
 FROM ODI
 WHERE
-  bowler = "Bhuvneshwar Kumar" AND opponent_team = "Australia";
-
-SELECT
-  SUM(ODI.runs) AS total_runs_scored
-FROM ODI
-WHERE
-  ODI.batsman = "Nitish Kumar" AND ODI.opponent_team = "Australia";
-
-SELECT
-  SUM(runs) AS total_runs
-FROM ODI
-WHERE
-  batsman = 'Mukesh Kumar' AND opponent_team = 'Australia';
-
-SELECT
-  SUM(runs) AS total_runs
-FROM ODI
-WHERE
-  batsman = "Suraj Kumar" AND opponent_team = "Australia";
+  batsman = 'Kapil Dev';
