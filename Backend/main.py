@@ -168,10 +168,10 @@ class Comparison():
 
     def image_retrieve(self,name,file='image'):
         documents = list(self.collection.find({ 'Player_name': name }))[0]
-        decoded_data = base64.b64decode(documents['Orginal'])
-        image_buffer = BytesIO(decoded_data)
-        image = Image.open(image_buffer)
-        image.save(file+'.jpg')
+        # decoded_data = base64.b64decode(documents['Orginal'])
+        # image_buffer = BytesIO(decoded_data)
+        # image = Image.open(image_buffer)
+        # image.save(file+'.jpg')
         decoded_data = base64.b64decode(documents['Removed'])
         image_buffer = BytesIO(decoded_data)
         image = Image.open(image_buffer)
@@ -182,12 +182,12 @@ class Comparison():
         try:
             self.image_retrieve(name1,file='image1')
         except:
-            self.image_retrieve(name1='Kedar Jadhav',file='image1')
+            self.image_retrieve(name='Kedar Jadhav',file='image1')
             print('Key error',name1)
         try:
             self.image_retrieve(name2,file='image2')
         except:
-            self.image_retrieve(name2='Kedar Jadhav',file='image2')
+            self.image_retrieve(name='Kedar Jadhav',file='image2')
             print('Key error',name2)
         
 # Com = Comparison()
