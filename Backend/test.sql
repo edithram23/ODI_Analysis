@@ -1,38 +1,42 @@
 
 SELECT
-  COUNT(*) AS MatchesPlayed
+  COUNT(*) AS matches_played
 FROM ODI
 WHERE
-  batsman = "Kapil Dev";
-
-SELECT SUM(runs)
-FROM ODI
-WHERE batsman = 'Kapil Dev';
-
-SELECT AVG(runs) AS "Run Average"
-FROM ODI
-WHERE batsman = 'Kapil Dev';
+  batsman = "Joe Root";
 
 SELECT
-  COUNT(*) AS fifties
+  SUM(runs) AS total_runs
 FROM ODI
 WHERE
-  batsman = 'Kapil Dev' AND runs >= 50 AND runs < 100;
+  batsman = 'Joe Root';
+
+SELECT 
+  AVG(runs) AS run_average
+FROM ODI
+WHERE
+  batsman = 'Joe Root';
 
 SELECT
-  COUNT(*) AS Number_of_Centuries
+  COUNT(*) AS "Number of Fifties"
 FROM ODI
 WHERE
-  batsman = 'Kapil Dev' AND runs >= 100;
+  batsman = 'Joe Root' AND runs >= 50;
 
 SELECT
-  SUM(fours) AS total_fours
+  COUNT(*) AS centuries
 FROM ODI
 WHERE
-  batsman = 'Kapil Dev';
+  batsman = 'Joe Root' AND runs >= 100;
 
 SELECT
-  SUM(sixes)
+  SUM(fours)
 FROM ODI
 WHERE
-  batsman = 'Kapil Dev';
+  batsman = "Joe Root";
+
+SELECT
+  SUM(sixes) AS total_sixes
+FROM ODI
+WHERE
+  batsman = 'Joe Root';

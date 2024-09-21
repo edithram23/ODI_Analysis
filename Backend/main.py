@@ -154,7 +154,7 @@ class GENAI():
 
 class Comparison():
     def __init__(self):
-        self.uri = "mongodb+srv://admin:root@odi.jhidcy8.mongodb.net/?retryWrites=true&w=majority&appName=ODI"
+        self.uri = os.getenv('mongodb')
         self.client = MongoClient(self.uri)
         self.db = self.client['ODI']
         self.collection = self.db.player_image
@@ -182,10 +182,12 @@ class Comparison():
         try:
             self.image_retrieve(name1,file='image1')
         except:
+            self.image_retrieve(name1='Kedar Jadhav',file='image1')
             print('Key error',name1)
         try:
             self.image_retrieve(name2,file='image2')
         except:
+            self.image_retrieve(name2='Kedar Jadhav',file='image2')
             print('Key error',name2)
         
 # Com = Comparison()
