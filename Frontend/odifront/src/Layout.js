@@ -1,8 +1,8 @@
 import './Layout.css'
 import {Outlet, Link} from 'react-router-dom';
-import Logo from './img/cricket.png';
-import QA from './img/QA.png'
-import Comparison from './img/versus.png';
+import Logo from './assets/img/cricket.png';
+import QA from './assets/img/QA.png'
+import Comparison from './assets/img/versus.png';
 function Layout() {
     return (
         <div className='MainContainer'>
