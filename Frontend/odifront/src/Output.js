@@ -2,8 +2,8 @@ import React from 'react'
 import './Output.css';
 // import Orginal from './img/Sachin Tendulkar.png';
 // import Removed from './img/Virat Kohli.png';
-import image1 from './assets/images/image1.png';
-import image2 from './assets/images/image2.png';
+// import image1 from './assets/images/image1.png';
+// import image2 from './assets/images/image2.png';
 
 function Output(props) {
     console.log(props);
@@ -20,7 +20,7 @@ function Output(props) {
             <div className='Output' style={{visibility:'visible'}}>
                 <div className='Output1' >
                     <div className='Player_info1'>
-                        <img src = {image1} className='Compare_img1'/>
+                        <img src = {`data:image/png;base64,${props.answer.img1}`}  className='Compare_img1'/>
                     </div>
                 </div>
                 <div class='Middle_info'>
@@ -80,7 +80,7 @@ function Output(props) {
                 </div>
                 <div className='Output2'>
                      <div className='Player_info2'>
-                        <img src = {image2} className='Compare_img2'/>
+                        <img src = {`data:image/png;base64,${props.answer.img2}`} className='Compare_img2'/>
                      </div>
                 </div>
             </div>

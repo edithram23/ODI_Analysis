@@ -3,7 +3,7 @@ import React,{useEffect,useState} from 'react';
 import Output from './Output';
 // import img_bg from './img/img1.jpg';
 import img_bg from './assets/img/img1.jpg';
-async function Submit(user_text,user_text2, set_text,setLoading)
+async function Submit(user_text,user_text2, set_text,setLoading,set_image1,set_image2)
 {
     if (user_text!=='' & user_text2!=='')
         {
@@ -24,6 +24,7 @@ async function Submit(user_text,user_text2, set_text,setLoading)
             // data['Output'].forEach((val) => {arr.push(<li>{val}</li>)})
             set_text(data);
             setLoading(false);
+            
             
             // console.log(document.getElementsByClassName('InnerContainer'));
             // console.log(document.getElementsByClassName('Output'));
@@ -53,7 +54,7 @@ async function getsugg(user_change,setSuggestion){
 function Visulization() {
     const[text,set_text] = useState('');   
     const[text2,set_text2] = useState('');
-
+    
     const[answer, setAnswer] = useState(' ');
     const[suggestion, setSuggestion] = useState([]);
     const[loading, setLoading] = useState(false);
