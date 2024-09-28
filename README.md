@@ -22,6 +22,7 @@ This project utilizes Gemini Pro for querying a Cricket ODI dataset. It includes
 - **Backend**: Flask, Python
 - **Frontend**: React, JavaScript, HTML, CSS
 - **Database**: SQL
+- **Deployment**: AWS, Azure, Docker containers
 - **Other**: Gemini Pro
 
 ## How to Run
