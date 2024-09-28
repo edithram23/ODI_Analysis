@@ -18,7 +18,7 @@ This project utilizes Gemini Pro for querying a Cricket ODI dataset. It includes
 - **User Input**: Users can type their questions in a text box.
 - **Output Display**: The output of the queries is displayed below the text box for easy readability.
 
-### Access the app @ 65.0.39.187 [cost cutting - will be running when needed for demo]
+### Access the app @ http://65.0.39.187 [cost cutting - app will be running only when needed for demo🤗]
 
 ## Technologies Used
 - **Backend**: Flask, Python
