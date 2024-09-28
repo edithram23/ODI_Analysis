@@ -32,9 +32,10 @@ This project utilizes Gemini Pro for querying a Cricket ODI dataset. It includes
 5. Ensure the backend server server.py is running to fetch the Gemini model and process queries.
 
 ## Ongoing works
-1. Preprocessing the dataset for player comparison
-2. Working on Bowling datasets and merging them to the database
+1. Working on Bowling datasets and merging them to the database
 
 ---
-### Current progress level of project
+### Reference image
 ![image](https://github.com/edithram23/ODI_Analysis/assets/106003437/f9c98c11-549e-4921-89ce-df344ddb9f9b)
+![image](https://github.com/user-attachments/assets/c13779b9-017f-417b-bfc1-3cdaa9e934d9)
+![image](https://github.com/user-attachments/assets/c0cdf296-5588-441e-bb07-316d23204eee)
