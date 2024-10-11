@@ -1,6 +1,8 @@
 import './Analysis.css'
 import React,{useEffect,useState} from 'react';
 import Output from './Output';
+const URL = process.env.REACT_APP_URL;
+
 async function Submit(user_text, set_text,setLoading,set_vis)
 {
     if (user_text!=='')
@@ -12,7 +14,7 @@ async function Submit(user_text, set_text,setLoading,set_vis)
             // fetch('/test').then(res => res.json()).then(data=>{y(data.Name)});
             const body = {"input": user_text};
             
-            const response = await fetch('api/test', {
+            const response = await fetch(URL+'/api/test', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'

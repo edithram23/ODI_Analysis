@@ -3,6 +3,8 @@ import React,{useEffect,useState} from 'react';
 import Output from './Output';
 // import img_bg from './img/img1.jpg';
 import img_bg from './assets/img/img1.jpg';
+const URL = process.env.REACT_APP_URL;
+
 async function Submit(user_text,user_text2, set_text,setLoading,set_image1,set_image2)
 {
     if (user_text!=='' & user_text2!=='')
@@ -12,8 +14,8 @@ async function Submit(user_text,user_text2, set_text,setLoading,set_image1,set_i
             // const [x, y] = useState('Hello');
             // fetch('/test').then(res => res.json()).then(data=>{y(data.Name)});
             const body = {"input": [user_text,user_text2]};
-            
-            const response = await fetch('api/comparison', {
+            console.log(URL);
+            const response = await fetch(URL+'/api/comparison', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'
@@ -39,7 +41,7 @@ async function Submit(user_text,user_text2, set_text,setLoading,set_image1,set_i
 async function getsugg(user_change,setSuggestion){
     const body = {"name": user_change};
             
-            const response = await fetch('api/suggestion', {
+            const response = await fetch(URL+'/api/suggestion', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'
