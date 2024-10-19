@@ -71,6 +71,32 @@ input[type="text"]::placeholder
 input[type="text"]::content{
     color: white;
 }
+.voice-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #202222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    left: 625px;
+}
+
+.modal-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #2C2C2C;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal-button:hover {
+    background-color: #111213;
+}
 
 .search-container form {
     position: relative;

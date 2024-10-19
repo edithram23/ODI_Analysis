@@ -1,0 +1,548 @@
+2024-10-15 18:54:04,821 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-15 18:54:04,821 - [33mPress CTRL+C to quit[0m
+2024-10-15 18:56:11,013 - IP: 127.0.0.1, Endpoint: /submit, Payload: {'text': 'MS Dhoni'}
+2024-10-15 18:56:11,020 - 127.0.0.1 - - [15/Oct/2024 18:56:11] "POST /submit HTTP/1.1" 200 -
+2024-10-15 18:56:30,072 - IP: 127.0.0.1, Endpoint: /submit, Payload: {'text': 'MS Dhoni'}
+2024-10-15 18:56:30,074 - 127.0.0.1 - - [15/Oct/2024 18:56:30] "POST /submit HTTP/1.1" 200 -
+2024-10-15 18:56:44,135 - IP: 127.0.0.1, Endpoint: /submit, Payload: {'text': 'MS Dhoni'}
+2024-10-15 18:56:44,137 - 127.0.0.1 - - [15/Oct/2024 18:56:44] "POST /submit HTTP/1.1" 200 -
+2024-10-15 18:56:45,345 - IP: 127.0.0.1, Endpoint: /submit, Payload: {'text': 'MS Dhoni'}
+2024-10-15 18:56:45,347 - 127.0.0.1 - - [15/Oct/2024 18:56:45] "POST /submit HTTP/1.1" 200 -
+2024-10-15 18:56:46,254 - IP: 127.0.0.1, Endpoint: /submit, Payload: {'text': 'MS Dhoni'}
+2024-10-15 18:56:46,259 - 127.0.0.1 - - [15/Oct/2024 18:56:46] "POST /submit HTTP/1.1" 200 -
+2024-10-15 18:56:47,345 - IP: 127.0.0.1, Endpoint: /submit, Payload: {'text': 'MS Dhoni'}
+2024-10-15 18:56:47,346 - 127.0.0.1 - - [15/Oct/2024 18:56:47] "POST /submit HTTP/1.1" 200 -
+2024-10-15 18:56:48,429 - IP: 127.0.0.1, Endpoint: /submit, Payload: {'text': 'MS Dhoni'}
+2024-10-15 18:56:48,430 - 127.0.0.1 - - [15/Oct/2024 18:56:48] "POST /submit HTTP/1.1" 200 -
+2024-10-15 18:56:49,284 - IP: 127.0.0.1, Endpoint: /submit, Payload: {'text': 'MS Dhoni'}
+2024-10-15 18:56:49,286 - 127.0.0.1 - - [15/Oct/2024 18:56:49] "POST /submit HTTP/1.1" 200 -
+2024-10-15 18:56:50,354 - IP: 127.0.0.1, Endpoint: /submit, Payload: {'text': 'MS Dhoni'}
+2024-10-15 18:56:50,357 - 127.0.0.1 - - [15/Oct/2024 18:56:50] "POST /submit HTTP/1.1" 200 -
+2024-10-15 18:56:51,424 - IP: 127.0.0.1, Endpoint: /submit, Payload: {'text': 'MS Dhoni'}
+2024-10-15 18:56:51,425 - 127.0.0.1 - - [15/Oct/2024 18:56:51] "POST /submit HTTP/1.1" 200 -
+2024-10-15 18:56:52,518 - ratelimit 10 per 1 hour (127.0.0.1) exceeded at endpoint: get
+2024-10-15 18:56:52,520 - 127.0.0.1 - - [15/Oct/2024 18:56:52] "[31m[1mPOST /submit HTTP/1.1[0m" 429 -
+2024-10-15 18:56:53,695 - ratelimit 10 per 1 hour (127.0.0.1) exceeded at endpoint: get
+2024-10-15 18:56:53,696 - 127.0.0.1 - - [15/Oct/2024 18:56:53] "[31m[1mPOST /submit HTTP/1.1[0m" 429 -
+2024-10-18 19:06:49,715 - Use pytorch device_name: cuda
+2024-10-18 19:06:49,715 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 19:11:40,747 - Use pytorch device_name: cuda
+2024-10-18 19:11:40,748 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 19:11:55,237 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 19:11:55,237 - [33mPress CTRL+C to quit[0m
+2024-10-18 19:14:21,606 - 127.0.0.1 - - [18/Oct/2024 19:14:21] "[33mGET / HTTP/1.1[0m" 404 -
+2024-10-18 19:14:21,671 - 127.0.0.1 - - [18/Oct/2024 19:14:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-18 19:14:26,615 - 127.0.0.1 - - [18/Oct/2024 19:14:26] "[31m[1mGET /submit HTTP/1.1[0m" 400 -
+2024-10-18 19:17:07,886 - 127.0.0.1 - - [18/Oct/2024 19:17:07] "OPTIONS /api/suggestion HTTP/1.1" 200 -
+2024-10-18 19:17:08,163 - 127.0.0.1 - - [18/Oct/2024 19:17:08] "POST /api/suggestion HTTP/1.1" 200 -
+2024-10-18 19:17:09,769 - 127.0.0.1 - - [18/Oct/2024 19:17:09] "POST /api/suggestion HTTP/1.1" 200 -
+2024-10-18 19:17:11,128 - 127.0.0.1 - - [18/Oct/2024 19:17:11] "POST /api/suggestion HTTP/1.1" 200 -
+2024-10-18 19:17:11,832 - 127.0.0.1 - - [18/Oct/2024 19:17:11] "POST /api/suggestion HTTP/1.1" 200 -
+2024-10-18 19:17:13,163 - 127.0.0.1 - - [18/Oct/2024 19:17:13] "POST /api/suggestion HTTP/1.1" 200 -
+2024-10-18 19:17:15,042 - 127.0.0.1 - - [18/Oct/2024 19:17:15] "OPTIONS /api/suggestion HTTP/1.1" 200 -
+2024-10-18 19:17:15,363 - 127.0.0.1 - - [18/Oct/2024 19:17:15] "POST /api/suggestion HTTP/1.1" 200 -
+2024-10-18 19:17:15,631 - 127.0.0.1 - - [18/Oct/2024 19:17:15] "POST /api/suggestion HTTP/1.1" 200 -
+2024-10-18 19:17:16,020 - 127.0.0.1 - - [18/Oct/2024 19:17:16] "POST /api/suggestion HTTP/1.1" 200 -
+2024-10-18 19:17:19,441 - ratelimit 10 per 1 hour (127.0.0.1) exceeded at endpoint: suggestion
+2024-10-18 19:17:19,442 - 127.0.0.1 - - [18/Oct/2024 19:17:19] "[31m[1mPOST /api/suggestion HTTP/1.1[0m" 429 -
+2024-10-18 19:17:20,138 - 127.0.0.1 - - [18/Oct/2024 19:17:20] "OPTIONS /api/comparison HTTP/1.1" 200 -
+2024-10-18 19:17:46,476 - 127.0.0.1 - - [18/Oct/2024 19:17:46] "POST /api/comparison HTTP/1.1" 200 -
+2024-10-18 19:29:19,475 - 127.0.0.1 - - [18/Oct/2024 19:29:19] "[33mGET /main.bbb67152b7fc62a0060a.hot-update.json HTTP/1.1[0m" 404 -
+2024-10-18 19:46:20,254 - 127.0.0.1 - - [18/Oct/2024 19:46:20] "[33mPOST /api/rule-audio HTTP/1.1[0m" 404 -
+2024-10-18 19:48:06,296 - Use pytorch device_name: cuda
+2024-10-18 19:48:06,296 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 19:49:56,221 - Use pytorch device_name: cuda
+2024-10-18 19:49:56,222 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 19:50:20,752 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 19:50:20,752 - [33mPress CTRL+C to quit[0m
+2024-10-18 19:53:23,110 - 127.0.0.1 - - [18/Oct/2024 19:53:23] "[33mGET /main.178a1d446160878a2b58.hot-update.json HTTP/1.1[0m" 404 -
+2024-10-18 19:58:49,493 - 127.0.0.1 - - [18/Oct/2024 19:58:49] "[33mPOST /api/rule-audio HTTP/1.1[0m" 404 -
+2024-10-18 19:59:58,095 - Use pytorch device_name: cuda
+2024-10-18 19:59:58,095 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 20:00:16,105 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 20:00:16,105 - [33mPress CTRL+C to quit[0m
+2024-10-18 20:26:42,451 - 127.0.0.1 - - [18/Oct/2024 20:26:42] "[31m[1mPOST /api/ruleaudio HTTP/1.1[0m" 400 -
+2024-10-18 20:28:12,094 - 127.0.0.1 - - [18/Oct/2024 20:28:12] "OPTIONS /api/suggestion HTTP/1.1" 200 -
+2024-10-18 20:28:12,367 - 127.0.0.1 - - [18/Oct/2024 20:28:12] "POST /api/suggestion HTTP/1.1" 200 -
+2024-10-18 20:28:22,024 - 127.0.0.1 - - [18/Oct/2024 20:28:22] "OPTIONS /api/rule HTTP/1.1" 200 -
+2024-10-18 20:28:23,421 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 20:28:23,426 - 127.0.0.1 - - [18/Oct/2024 20:28:23] "POST /api/rule HTTP/1.1" 200 -
+2024-10-18 21:03:41,026 - Use pytorch device_name: cuda
+2024-10-18 21:03:41,026 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 21:03:53,586 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 21:03:53,586 - [33mPress CTRL+C to quit[0m
+2024-10-18 21:07:03,447 - 127.0.0.1 - - [18/Oct/2024 21:07:03] "[31m[1mPOST /api/ruleaudio HTTP/1.1[0m" 400 -
+2024-10-18 21:08:44,079 - Use pytorch device_name: cuda
+2024-10-18 21:08:44,079 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 21:08:56,439 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 21:08:56,439 - [33mPress CTRL+C to quit[0m
+2024-10-18 21:10:20,416 - 127.0.0.1 - - [18/Oct/2024 21:10:20] "[31m[1mPOST /api/ruleaudio HTTP/1.1[0m" 400 -
+2024-10-18 21:14:16,022 - Use pytorch device_name: cuda
+2024-10-18 21:14:16,022 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 21:14:29,371 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 21:14:29,372 - [33mPress CTRL+C to quit[0m
+2024-10-18 21:16:09,775 - Exception on /api/ruleaudio [POST]
+Traceback (most recent call last):
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "G:\SNU\csc\ODI\Backend\server.py", line 74, in ruleaudio
+    'Output':req,
+NameError: name 'req' is not defined. Did you mean: 're'?
+2024-10-18 21:16:09,799 - 127.0.0.1 - - [18/Oct/2024 21:16:09] "[35m[1mPOST /api/ruleaudio HTTP/1.1[0m" 500 -
+2024-10-18 21:30:49,001 - Use pytorch device_name: cuda
+2024-10-18 21:30:49,002 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 21:31:02,849 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 21:31:02,849 - [33mPress CTRL+C to quit[0m
+2024-10-18 21:32:08,367 - Exception on /api/ruleaudio [POST]
+Traceback (most recent call last):
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "G:\SNU\csc\ODI\Backend\server.py", line 74, in ruleaudio
+    'Output':req,
+NameError: name 'req' is not defined. Did you mean: 're'?
+2024-10-18 21:32:08,370 - 127.0.0.1 - - [18/Oct/2024 21:32:08] "[35m[1mPOST /api/ruleaudio HTTP/1.1[0m" 500 -
+2024-10-18 21:56:36,203 - Exception on /api/ruleaudio [POST]
+Traceback (most recent call last):
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "G:\SNU\csc\ODI\Backend\server.py", line 74, in ruleaudio
+    return jsonify({'Output': f'Failed to save audio: {str(e)}'}), 500
+NameError: name 'req' is not defined. Did you mean: 're'?
+2024-10-18 21:56:36,214 - 127.0.0.1 - - [18/Oct/2024 21:56:36] "[35m[1mPOST /api/ruleaudio HTTP/1.1[0m" 500 -
+2024-10-18 21:57:25,927 - Use pytorch device_name: cuda
+2024-10-18 21:57:25,927 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 21:57:38,551 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 21:57:38,551 - [33mPress CTRL+C to quit[0m
+2024-10-18 21:58:32,074 - 127.0.0.1 - - [18/Oct/2024 21:58:32] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 22:01:40,735 - 127.0.0.1 - - [18/Oct/2024 22:01:40] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 22:02:27,916 - 127.0.0.1 - - [18/Oct/2024 22:02:27] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 22:02:28,264 - 127.0.0.1 - - [18/Oct/2024 22:02:28] code 414, message Request-URI Too Long
+2024-10-18 22:02:28,264 - 127.0.0.1 - - [18/Oct/2024 22:02:28] "[35m[1m[0m" HTTPStatus.REQUEST_URI_TOO_LONG -
+2024-10-18 22:04:50,225 - 127.0.0.1 - - [18/Oct/2024 22:04:50] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 22:05:12,432 - 127.0.0.1 - - [18/Oct/2024 22:05:12] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 22:05:12,767 - 127.0.0.1 - - [18/Oct/2024 22:05:12] code 414, message Request-URI Too Long
+2024-10-18 22:05:12,767 - 127.0.0.1 - - [18/Oct/2024 22:05:12] "[35m[1m[0m" HTTPStatus.REQUEST_URI_TOO_LONG -
+2024-10-18 22:05:30,262 - 127.0.0.1 - - [18/Oct/2024 22:05:30] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 22:05:30,283 - 127.0.0.1 - - [18/Oct/2024 22:05:30] code 414, message Request-URI Too Long
+2024-10-18 22:05:30,283 - 127.0.0.1 - - [18/Oct/2024 22:05:30] "[35m[1m[0m" HTTPStatus.REQUEST_URI_TOO_LONG -
+2024-10-18 22:16:06,554 - 127.0.0.1 - - [18/Oct/2024 22:16:06] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 22:17:10,046 - 127.0.0.1 - - [18/Oct/2024 22:17:10] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 22:17:53,450 - 127.0.0.1 - - [18/Oct/2024 22:17:53] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 22:18:50,733 - 127.0.0.1 - - [18/Oct/2024 22:18:50] "OPTIONS /api/rule HTTP/1.1" 200 -
+2024-10-18 22:18:52,591 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 22:18:52,596 - 127.0.0.1 - - [18/Oct/2024 22:18:52] "POST /api/rule HTTP/1.1" 200 -
+2024-10-18 22:20:31,906 - Use pytorch device_name: cuda
+2024-10-18 22:20:31,906 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 22:20:44,749 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 22:20:44,749 - [33mPress CTRL+C to quit[0m
+2024-10-18 22:21:25,322 - 127.0.0.1 - - [18/Oct/2024 22:21:25] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 22:49:53,580 - Use pytorch device_name: cuda
+2024-10-18 22:49:53,580 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 22:50:05,921 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 22:50:05,921 - [33mPress CTRL+C to quit[0m
+2024-10-18 22:52:26,099 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-18 22:52:27,383 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 22:52:27,388 - Exception on /api/ruleaudio [POST]
+Traceback (most recent call last):
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "G:\SNU\csc\ODI\Backend\server.py", line 71, in ruleaudio
+    audio_data = speech.speech_gen(output)
+  File "G:\SNU\csc\ODI\Backend\speech.py", line 33, in speech_gen
+    TEXT = {"text": translation.text}
+AttributeError: 'list' object has no attribute 'text'
+2024-10-18 22:52:27,392 - 127.0.0.1 - - [18/Oct/2024 22:52:27] "[35m[1mPOST /api/ruleaudio HTTP/1.1[0m" 500 -
+2024-10-18 22:53:17,813 - Use pytorch device_name: cuda
+2024-10-18 22:53:17,813 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 22:53:30,736 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 22:53:30,736 - [33mPress CTRL+C to quit[0m
+2024-10-18 22:53:51,433 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-18 22:53:53,145 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 22:53:53,148 - Exception on /api/ruleaudio [POST]
+Traceback (most recent call last):
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "G:\SNU\csc\ODI\Backend\server.py", line 71, in ruleaudio
+    audio_data = speech.speech_gen(output)
+  File "G:\SNU\csc\ODI\Backend\speech.py", line 33, in speech_gen
+    TEXT = {"text": translation.text}
+AttributeError: 'list' object has no attribute 'text'
+2024-10-18 22:53:53,150 - 127.0.0.1 - - [18/Oct/2024 22:53:53] "[35m[1mPOST /api/ruleaudio HTTP/1.1[0m" 500 -
+2024-10-18 22:54:54,641 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-18 22:54:56,438 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 22:54:56,439 - Exception on /api/ruleaudio [POST]
+Traceback (most recent call last):
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "G:\SNU\csc\ODI\Backend\server.py", line 71, in ruleaudio
+    audio_data = speech.speech_gen(output)
+  File "G:\SNU\csc\ODI\Backend\speech.py", line 33, in speech_gen
+    TEXT = {"text": translation.text}
+AttributeError: 'list' object has no attribute 'text'
+2024-10-18 22:54:56,440 - 127.0.0.1 - - [18/Oct/2024 22:54:56] "[35m[1mPOST /api/ruleaudio HTTP/1.1[0m" 500 -
+2024-10-18 22:56:39,627 - Use pytorch device_name: cuda
+2024-10-18 22:56:39,627 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 22:56:52,176 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 22:56:52,176 - [33mPress CTRL+C to quit[0m
+2024-10-18 22:59:17,478 - Use pytorch device_name: cuda
+2024-10-18 22:59:17,478 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 22:59:30,895 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 22:59:30,895 - [33mPress CTRL+C to quit[0m
+2024-10-18 22:59:55,514 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-18 22:59:57,864 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 22:59:57,867 - Exception on /api/ruleaudio [POST]
+Traceback (most recent call last):
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "G:\SNU\csc\ODI\Backend\server.py", line 71, in ruleaudio
+    audio_data = speech.speech_gen(''.join(output))
+  File "G:\SNU\csc\ODI\Backend\speech.py", line 33, in speech_gen
+    TEXT = {"text": translation.text}
+AttributeError: 'str' object has no attribute 'text'
+2024-10-18 22:59:57,869 - 127.0.0.1 - - [18/Oct/2024 22:59:57] "[35m[1mPOST /api/ruleaudio HTTP/1.1[0m" 500 -
+2024-10-18 23:05:33,477 - Use pytorch device_name: cuda
+2024-10-18 23:05:33,477 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 23:05:46,787 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 23:05:46,787 - [33mPress CTRL+C to quit[0m
+2024-10-18 23:06:09,776 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-18 23:06:11,284 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 23:06:12,447 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-18 23:06:13,461 - 127.0.0.1 - - [18/Oct/2024 23:06:13] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 23:07:21,515 - Use pytorch device_name: cuda
+2024-10-18 23:07:21,515 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 23:07:38,086 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 23:07:38,086 - [33mPress CTRL+C to quit[0m
+2024-10-18 23:07:55,849 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-18 23:07:57,282 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 23:07:58,305 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-18 23:07:59,057 - 127.0.0.1 - - [18/Oct/2024 23:07:59] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 23:08:44,357 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-18 23:08:45,616 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 23:08:46,736 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-18 23:08:47,579 - 127.0.0.1 - - [18/Oct/2024 23:08:47] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 23:10:15,188 - Use pytorch device_name: cuda
+2024-10-18 23:10:15,188 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 23:10:28,799 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 23:10:28,801 - [33mPress CTRL+C to quit[0m
+2024-10-18 23:10:48,660 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-18 23:10:49,693 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 23:10:50,691 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-18 23:10:51,237 - 127.0.0.1 - - [18/Oct/2024 23:10:51] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 23:12:51,291 - 127.0.0.1 - - [18/Oct/2024 23:12:51] "OPTIONS /api/rule HTTP/1.1" 200 -
+2024-10-18 23:12:52,519 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 23:12:52,520 - 127.0.0.1 - - [18/Oct/2024 23:12:52] "POST /api/rule HTTP/1.1" 200 -
+2024-10-18 23:13:31,139 - 127.0.0.1 - - [18/Oct/2024 23:13:31] "OPTIONS /api/rule HTTP/1.1" 200 -
+2024-10-18 23:13:32,698 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 23:13:32,699 - 127.0.0.1 - - [18/Oct/2024 23:13:32] "POST /api/rule HTTP/1.1" 200 -
+2024-10-18 23:14:31,363 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-18 23:14:33,388 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 23:14:34,463 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-18 23:14:35,265 - 127.0.0.1 - - [18/Oct/2024 23:14:35] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 23:15:47,150 - Use pytorch device_name: cuda
+2024-10-18 23:15:47,150 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 23:16:00,199 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 23:16:00,199 - [33mPress CTRL+C to quit[0m
+2024-10-18 23:16:51,530 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-18 23:16:52,749 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 23:16:53,662 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-18 23:16:53,922 - 127.0.0.1 - - [18/Oct/2024 23:16:53] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-18 23:18:28,179 - Use pytorch device_name: cuda
+2024-10-18 23:18:28,179 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-18 23:18:41,099 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 23:18:41,099 - [33mPress CTRL+C to quit[0m
+2024-10-18 23:18:57,447 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-18 23:18:58,817 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-18 23:18:59,803 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-18 23:19:00,600 - 127.0.0.1 - - [18/Oct/2024 23:19:00] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 00:01:57,174 - Use pytorch device_name: cuda
+2024-10-19 00:01:57,174 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-19 00:02:12,674 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-19 00:02:12,674 - [33mPress CTRL+C to quit[0m
+2024-10-19 00:02:48,160 - 127.0.0.1 - - [19/Oct/2024 00:02:48] "OPTIONS /api/rule HTTP/1.1" 200 -
+2024-10-19 00:02:52,206 - 127.0.0.1 - - [19/Oct/2024 00:02:52] "POST /api/rule HTTP/1.1" 200 -
+2024-10-19 00:04:00,877 - Use pytorch device_name: cuda
+2024-10-19 00:04:00,878 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-19 00:04:15,374 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-19 00:04:15,374 - [33mPress CTRL+C to quit[0m
+2024-10-19 00:04:17,783 - 127.0.0.1 - - [19/Oct/2024 00:04:17] "OPTIONS /api/rule HTTP/1.1" 200 -
+2024-10-19 00:04:21,745 - 127.0.0.1 - - [19/Oct/2024 00:04:21] "POST /api/rule HTTP/1.1" 200 -
+2024-10-19 00:06:27,319 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 00:06:30,791 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 00:06:31,071 - 127.0.0.1 - - [19/Oct/2024 00:06:31] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 00:07:43,338 - 127.0.0.1 - - [19/Oct/2024 00:07:43] "OPTIONS /api/rule HTTP/1.1" 200 -
+2024-10-19 00:07:46,216 - 127.0.0.1 - - [19/Oct/2024 00:07:46] "POST /api/rule HTTP/1.1" 200 -
+2024-10-19 00:08:18,408 - Use pytorch device_name: cuda
+2024-10-19 00:08:18,408 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-19 00:08:33,454 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-19 00:08:33,454 - [33mPress CTRL+C to quit[0m
+2024-10-19 00:09:10,330 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 00:09:15,014 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 00:09:15,346 - 127.0.0.1 - - [19/Oct/2024 00:09:15] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 00:09:36,020 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 00:09:39,987 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 00:09:40,344 - 127.0.0.1 - - [19/Oct/2024 00:09:40] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 00:10:23,667 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 00:10:28,377 - Exception on /api/ruleaudio [POST]
+Traceback (most recent call last):
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "G:\SNU\csc\ODI\Backend\server.py", line 73, in ruleaudio
+    output = GENAI.output(text+'?')
+  File "G:\SNU\csc\ODI\Backend\main.py", line 128, in output
+    answer_text+=[self.genai(self.prompt_out, question[i]+'~'.join(map(str, self.query_sql(sql_commands[i], 'ODI.db')[0]))).text]
+IndexError: list index out of range
+2024-10-19 00:10:28,380 - 127.0.0.1 - - [19/Oct/2024 00:10:28] "[35m[1mPOST /api/ruleaudio HTTP/1.1[0m" 500 -
+2024-10-19 00:11:19,803 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 00:11:40,044 - Exception on /api/ruleaudio [POST]
+Traceback (most recent call last):
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "G:\SNU\csc\ODI\Backend\server.py", line 73, in ruleaudio
+    output = GENAI.output(text+'?')
+  File "G:\SNU\csc\ODI\Backend\main.py", line 128, in output
+    answer_text+=[self.genai(self.prompt_out, question[i]+'~'.join(map(str, self.query_sql(sql_commands[i], 'ODI.db')[0]))).text]
+  File "G:\SNU\csc\ODI\Backend\main.py", line 113, in genai
+    output = self.model.generate_content([prompt, question])
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\generativeai\generative_models.py", line 232, in generate_content
+    response = self._client.generate_content(
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 566, in generate_content
+    response = rpc(
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\retry\retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\retry\retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\retry\retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\retry\retry_unary.py", line 144, in retry_target
+    result = target()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\timeout.py", line 120, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 Resource has been exhausted (e.g. check quota).
+2024-10-19 00:11:40,118 - 127.0.0.1 - - [19/Oct/2024 00:11:40] "[35m[1mPOST /api/ruleaudio HTTP/1.1[0m" 500 -
+2024-10-19 00:12:54,402 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 00:12:58,718 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 00:12:59,143 - 127.0.0.1 - - [19/Oct/2024 00:12:59] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 00:13:19,412 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 00:13:23,308 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 00:13:23,571 - 127.0.0.1 - - [19/Oct/2024 00:13:23] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 00:13:35,175 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 00:13:38,755 - Exception on /api/ruleaudio [POST]
+Traceback (most recent call last):
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "G:\SNU\csc\ODI\Backend\server.py", line 73, in ruleaudio
+    output = GENAI.output(text+'?')
+  File "G:\SNU\csc\ODI\Backend\main.py", line 128, in output
+    answer_text+=[self.genai(self.prompt_out, question[i]+'~'.join(map(str, self.query_sql(sql_commands[i], 'ODI.db')[0]))).text]
+  File "G:\SNU\csc\ODI\Backend\main.py", line 107, in query_sql
+    cur.execute(code)
+sqlite3.OperationalError: no such column: t1.wickets
+2024-10-19 00:13:38,756 - 127.0.0.1 - - [19/Oct/2024 00:13:38] "[35m[1mPOST /api/ruleaudio HTTP/1.1[0m" 500 -
+2024-10-19 00:20:59,743 - Use pytorch device_name: cuda
+2024-10-19 00:20:59,743 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-19 00:21:12,732 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-19 00:21:12,733 - [33mPress CTRL+C to quit[0m
+2024-10-19 00:22:04,631 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 00:22:25,679 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 00:22:28,758 - 127.0.0.1 - - [19/Oct/2024 00:22:28] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 00:27:33,512 - 127.0.0.1 - - [19/Oct/2024 00:27:33] "[33mGET /main.2ddda2b327bb9023c242.hot-update.json HTTP/1.1[0m" 404 -
+2024-10-19 00:27:33,605 - 127.0.0.1 - - [19/Oct/2024 00:27:33] "[33mGET /main.2ddda2b327bb9023c242.hot-update.json HTTP/1.1[0m" 404 -
+2024-10-19 00:27:33,826 - 127.0.0.1 - - [19/Oct/2024 00:27:33] "[33mGET /main.2ddda2b327bb9023c242.hot-update.json HTTP/1.1[0m" 404 -
+2024-10-19 00:43:56,395 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 00:44:03,136 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 00:44:03,688 - 127.0.0.1 - - [19/Oct/2024 00:44:03] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 00:45:20,721 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 00:45:24,672 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 00:45:24,945 - 127.0.0.1 - - [19/Oct/2024 00:45:24] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 00:45:52,968 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 00:45:56,968 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 00:45:57,326 - 127.0.0.1 - - [19/Oct/2024 00:45:57] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 00:48:04,724 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 00:48:39,802 - Exception on /api/ruleaudio [POST]
+Traceback (most recent call last):
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "G:\SNU\csc\ODI\Backend\server.py", line 73, in ruleaudio
+    # output = rules.groq_output(text+'?')
+  File "G:\SNU\csc\ODI\Backend\main.py", line 120, in output
+    out+=[self.genai(self.prompt, i).text]
+  File "G:\SNU\csc\ODI\Backend\main.py", line 113, in genai
+    output = self.model.generate_content([prompt, question])
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\generativeai\generative_models.py", line 232, in generate_content
+    response = self._client.generate_content(
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 566, in generate_content
+    response = rpc(
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\retry\retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\retry\retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\retry\retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\retry\retry_unary.py", line 144, in retry_target
+    result = target()
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\timeout.py", line 120, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\edith\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 Resource has been exhausted (e.g. check quota).
+2024-10-19 00:48:39,839 - 127.0.0.1 - - [19/Oct/2024 00:48:39] "[35m[1mPOST /api/ruleaudio HTTP/1.1[0m" 500 -
+2024-10-19 01:03:55,561 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 01:04:00,646 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 01:04:01,399 - 127.0.0.1 - - [19/Oct/2024 01:04:01] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 01:04:52,085 - 127.0.0.1 - - [19/Oct/2024 01:04:52] "OPTIONS /api/rule HTTP/1.1" 200 -
+2024-10-19 01:04:55,088 - 127.0.0.1 - - [19/Oct/2024 01:04:55] "POST /api/rule HTTP/1.1" 200 -
+2024-10-19 01:05:24,013 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 01:05:27,697 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 01:05:28,026 - 127.0.0.1 - - [19/Oct/2024 01:05:28] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 01:10:54,932 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 01:10:59,715 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 01:10:59,986 - 127.0.0.1 - - [19/Oct/2024 01:10:59] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 01:11:09,653 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 01:11:13,639 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 01:11:14,049 - 127.0.0.1 - - [19/Oct/2024 01:11:14] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 01:15:47,515 - Use pytorch device_name: cuda
+2024-10-19 01:15:47,515 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-10-19 01:16:00,421 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-19 01:16:00,421 - [33mPress CTRL+C to quit[0m
+2024-10-19 01:18:14,251 - IP: 127.0.0.1, Endpoint: /api/ruleaudio, Payload: None
+2024-10-19 01:18:14,988 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 01:18:19,920 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 01:18:20,242 - 127.0.0.1 - - [19/Oct/2024 01:18:20] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 01:18:40,278 - IP: 127.0.0.1, Endpoint: /api/ruleaudio, Payload: None
+2024-10-19 01:18:41,064 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 01:18:44,902 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 01:18:45,308 - 127.0.0.1 - - [19/Oct/2024 01:18:45] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 01:20:08,599 - IP: 127.0.0.1, Endpoint: /api/ruleaudio, Payload: None
+2024-10-19 01:20:10,224 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 01:20:13,635 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 01:20:13,935 - 127.0.0.1 - - [19/Oct/2024 01:20:13] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 01:20:34,691 - IP: 127.0.0.1, Endpoint: /api/ruleaudio, Payload: None
+2024-10-19 01:20:35,537 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 01:20:39,100 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 01:20:39,364 - 127.0.0.1 - - [19/Oct/2024 01:20:39] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 01:21:02,313 - IP: 127.0.0.1, Endpoint: /api/ruleaudio, Payload: None
+2024-10-19 01:21:03,498 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 01:21:07,415 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 01:21:07,800 - 127.0.0.1 - - [19/Oct/2024 01:21:07] "POST /api/ruleaudio HTTP/1.1" 200 -
+2024-10-19 01:22:30,909 - IP: 127.0.0.1, Endpoint: /api/ruleaudio, Payload: None
+2024-10-19 01:22:31,620 - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-10-19 01:22:35,457 - HTTP Request: POST https://api.deepgram.com/v1/speak?model=aura-asteria-en "HTTP/1.1 200 OK"
+2024-10-19 01:22:35,773 - 127.0.0.1 - - [19/Oct/2024 01:22:35] "POST /api/ruleaudio HTTP/1.1" 200 -

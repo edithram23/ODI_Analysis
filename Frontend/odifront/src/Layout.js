@@ -2,6 +2,7 @@ import './Layout.css'
 import {Outlet, Link} from 'react-router-dom';
 import Logo from './assets/img/cricket.png';
 import QA from './assets/img/QA.png'
+import Book from './assets/img/book.png';
 import Comparison from './assets/img/versus.png';
 function Layout() {
     return (
@@ -17,6 +18,12 @@ function Layout() {
                             <div className='link_logo'>
                                 <img src={QA} className='Comparison'/>
                                 Q&A
+                            </div>
+                            </Link>
+                            <Link to='/Rules'>
+                            <div className='link_logo'>
+                                <img src={QA} className='Comparison'/>
+                                AUDIO
                             </div>
                             </Link>
                             <Link to='/Visualization'>

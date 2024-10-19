@@ -16,6 +16,10 @@ from pymongo import MongoClient
 import base64
 from io import BytesIO
 from PIL import Image
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt_tab')
+nltk.download('punkt')
 
 load_dotenv('API.env')
 
@@ -177,19 +181,26 @@ class Comparison():
         image = Image.open(image_buffer)
         trimmed_image = self.trim_transparency(image)
         print("123")
-        trimmed_image.save('../frontend/odifront/src/assets/images/'+file+'.png')
+        
+        # trimmed_image.save('../frontend/odifront/src/assets/images/'+file+'.png')
+        output_buffer = BytesIO()
+        trimmed_image.save(output_buffer, format="PNG")
+        base64_encoded_image = base64.b64encode(output_buffer.getvalue()).decode('utf-8')
+
+        # Return Base64 encoded image
+        return base64_encoded_image
     def output(self,name1,name2):
         try:
-            self.image_retrieve(name1,file='image1')
+            image1 = self.image_retrieve(name1,file='image1')
         except:
-            self.image_retrieve(name='Kedar Jadhav',file='image1')
+            image1 = self.image_retrieve(name='Kedar Jadhav',file='image1')
             print('Key error',name1)
         try:
-            self.image_retrieve(name2,file='image2')
+            image2= self.image_retrieve(name2,file='image2')
         except:
-            self.image_retrieve(name='Kedar Jadhav',file='image2')
+            image2=self.image_retrieve(name='Kedar Jadhav',file='image2')
             print('Key error',name2)
-        
+        return image1,image2
 # Com = Comparison()
 # Com.image_retrieve('Virat Kohli')
 
